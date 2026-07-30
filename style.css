@@ -13,53 +13,70 @@
     --call-hover:#C96D00;
 }
 
+/* ==============================
+   RESET
+================================ */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
+/* ==============================
+   BODY
+================================ */
+
 body{
-
     font-family:Arial, Helvetica, sans-serif;
-
     background:var(--bg);
-
     color:var(--text);
-
     line-height:1.6;
-
-    border:3px solid var(--gold);
-
-    border-radius:20px;
-
-    margin:15px;
-
-    min-height:100vh;
-
+    margin:0;
+    padding:0;
     overflow-x:hidden;
 }
 
-/* PAGE WRAPPER */
+/* ==============================
+   WEBSITE BORDER CONTAINER
+================================ */
 
 .page-wrapper{
 
     width:100%;
 
-    max-width:1200px;
+    max-width:1350px;
 
-    margin:0 auto;
+    margin:10px auto;
+
+    border:3px solid var(--gold);
+
+    border-radius:20px;
+
+    background:#111111;
+
+    padding:20px;
 
     overflow:hidden;
 }
 
-/* HEADER */
+/* ==============================
+   HEADER
+================================ */
 
 .site-header{
+
+    width:100%;
 
     text-align:center;
 
     padding:40px 20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
 }
 
 .brand-box h1{
@@ -78,7 +95,9 @@ body{
     font-size:18px;
 }
 
-/* DIVIDER */
+/* ==============================
+   DIVIDER
+================================ */
 
 .section-divider{
 
@@ -91,11 +110,23 @@ body{
     margin:30px 40px;
 }
 
-/* SECTION HEADERS */
+/* ==============================
+   SECTION HEADERS
+================================ */
 
 .menu-header{
 
+    width:100%;
+
     text-align:center;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
 
     padding:20px;
 }
@@ -114,15 +145,13 @@ body{
     color:var(--gold);
 }
 
-/* MENU AREA */
+/* ==============================
+   MENU SECTION
+================================ */
 
 .menu-section{
 
     width:100%;
-
-    max-width:1100px;
-
-    margin:0 auto;
 
     display:flex;
 
@@ -139,7 +168,7 @@ body{
 
     width:100%;
 
-    max-width:1000px;
+    max-width:1200px;
 
     text-align:center;
 
@@ -159,8 +188,6 @@ body{
 
     width:100%;
 
-    max-width:100%;
-
     height:auto;
 
     display:block;
@@ -170,7 +197,9 @@ body{
     box-shadow:0 0 20px rgba(0,0,0,.45);
 }
 
-/* ORDER ONLINE */
+/* ==============================
+   ORDER ONLINE
+================================ */
 
 .quick-order-section{
 
@@ -214,6 +243,10 @@ body{
     margin-bottom:20px;
 }
 
+/* ==============================
+   BUTTONS
+================================ */
+
 .btn{
 
     display:block;
@@ -255,7 +288,9 @@ body{
     background:var(--whatsapp-hover);
 }
 
-/* FOOTER */
+/* ==============================
+   FOOTER
+================================ */
 
 .footer{
 
@@ -294,7 +329,9 @@ body{
     margin-top:20px;
 }
 
-/* FLOATING BUTTONS */
+/* ==============================
+   FLOATING BUTTONS
+================================ */
 
 .floating-call,
 .floating-whatsapp{
@@ -365,7 +402,9 @@ body{
     outline-offset:4px;
 }
 
-/* MOBILE */
+/* ==============================
+   MOBILE
+================================ */
 
 @media(max-width:768px){
 
