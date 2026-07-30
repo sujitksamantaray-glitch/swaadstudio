@@ -1,444 +1,60 @@
-:root{
-    --bg:#111111;
-    --card:#1A1A1A;
-
-    --gold:#F4C542;
-
-    --text:#F5F5F5;
-
-    --whatsapp:#1FA855;
-    --whatsapp-hover:#178A45;
-
-    --call:#E67E00;
-    --call-hover:#C96D00;
-}
-
-/* ==============================
+/* =========================
    RESET
-================================ */
+========================= */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* ==============================
+/* =========================
    BODY
-================================ */
+========================= */
 
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:var(--bg);
-    color:var(--text);
-    line-height:1.6;
-    margin:0;
-    padding:0;
-    overflow-x:hidden;
+body {
+    background: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
 }
 
-/* ==============================
-   WEBSITE BORDER CONTAINER
-================================ */
+/* =========================
+   MAIN WRAPPER
+========================= */
 
-.page-wrapper{
-
-    width:100%;
-
-    max-width:1350px;
-
-    margin:10px auto;
-
-    border:3px solid var(--gold);
-
-    border-radius:20px;
-
-    background:#111111;
-
-    padding:20px;
-
-    overflow:hidden;
+.page-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    border: 3px solid #d4a017;
+    padding: 25px;
 }
 
-/* ==============================
+/* =========================
    HEADER
-================================ */
+========================= */
 
-.site-header{
-
-    width:100%;
-
-    text-align:center;
-
-    padding:40px 20px;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
+header {
+    text-align: center;
+    padding: 20px 0;
 }
 
-.brand-box h1{
-
-    font-size:52px;
-
-    color:#ffffff;
+header h1 {
+    color: #d4a017;
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
-.brand-box p{
-
-    color:var(--gold);
-
-    margin-top:10px;
-
-    font-size:18px;
+header p {
+    color: #ddd;
+    font-size: 1.2rem;
 }
 
-/* ==============================
-   DIVIDER
-================================ */
-
-.section-divider{
-
-    border:none;
-
-    height:2px;
-
-    background:var(--gold);
-
-    margin:30px 40px;
-}
-
-/* ==============================
-   SECTION HEADERS
-================================ */
-
-.menu-header{
-
-    width:100%;
-
-    text-align:center;
-
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:center;
-
-    align-items:center;
-
-    padding:20px;
-}
-
-.menu-header h2{
-
-    font-size:36px;
-
-    color:white;
-
-    margin-bottom:10px;
-}
-
-.menu-header p{
-
-    color:var(--gold);
-}
-
-/* ==============================
-   MENU SECTION
-================================ */
-
-.menu-section{
-
-    width:100%;
-
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:center;
-
-    gap:40px;
-
-    padding:20px;
-}
-
-.menu-card{
-
-    width:100%;
-
-    max-width:1200px;
-
-    text-align:center;
-
-    overflow:hidden;
-}
-
-.menu-card h3{
-
-    font-size:28px;
-
-    color:var(--gold);
-
-    margin-bottom:15px;
-}
-
-.menu-image{
-
-    width:100%;
-
-    height:auto;
-
-    display:block;
-
-    border-radius:15px;
-
-    box-shadow:0 0 20px rgba(0,0,0,.45);
-}
-
-/* ==============================
-   ORDER ONLINE
-================================ */
-
-.quick-order-section{
-
-    padding:20px 20px 40px;
-}
-
-.order-container{
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:30px;
-
-    flex-wrap:wrap;
-}
-
-.order-card{
-
-    width:320px;
-
-    background:var(--card);
-
-    border-radius:15px;
-
-    padding:25px;
-
-    text-align:center;
-
-    box-shadow:0 0 15px rgba(0,0,0,.35);
-}
-
-.phone-number{
-
-    color:var(--gold);
-
-    font-size:24px;
-
-    font-weight:bold;
-
-    margin-bottom:20px;
-}
-
-/* ==============================
-   BUTTONS
-================================ */
-
-.btn{
-
-    display:block;
-
-    width:100%;
-
-    padding:15px;
-
-    border-radius:12px;
-
-    text-decoration:none;
-
-    text-align:center;
-
-    font-weight:bold;
-
-    color:white;
-
-    transition:.3s;
-}
-
-.call-btn{
-
-    background:var(--call);
-}
-
-.call-btn:hover{
-
-    background:var(--call-hover);
-}
-
-.whatsapp-btn{
-
-    background:var(--whatsapp);
-}
-
-.whatsapp-btn:hover{
-
-    background:var(--whatsapp-hover);
-}
-
-/* ==============================
-   FOOTER
-================================ */
-
-.footer{
-
-    padding:30px 20px;
-}
-
-.footer-grid{
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:50px;
-
-    flex-wrap:wrap;
-
-    text-align:center;
-}
-
-.footer-grid strong{
-
-    color:var(--gold);
-}
-
-.footer-grid p{
-
-    margin-top:8px;
-}
-
-.footer-note{
-
-    text-align:center;
-
-    color:var(--gold);
-
-    margin-top:20px;
-}
-
-/* ==============================
-   FLOATING BUTTONS
-================================ */
-
-.floating-call,
-.floating-whatsapp{
-
-    position:fixed;
-
-    right:20px;
-
-    width:65px;
-
-    height:65px;
-
-    border-radius:50%;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    text-decoration:none;
-
-    color:white;
-
-    font-size:30px;
-
-    z-index:9999;
-
-    box-shadow:0 4px 15px rgba(0,0,0,.4);
-
-    transition:all .3s ease;
-}
-
-.floating-call{
-
-    bottom:95px;
-
-    background:var(--call);
-}
-
-.floating-whatsapp{
-
-    bottom:20px;
-
-    background:var(--whatsapp);
-}
-
-.floating-call:hover{
-
-    background:var(--call-hover);
-
-    transform:scale(1.08);
-}
-
-.floating-whatsapp:hover{
-
-    background:var(--whatsapp-hover);
-
-    transform:scale(1.08);
-}
-
-.floating-call:focus,
-.floating-whatsapp:focus,
-.btn:focus{
-
-    outline:3px solid white;
-
-    outline-offset:4px;
-}
-
-/* ==============================
-   MOBILE
-================================ */
-
-@media(max-width:768px){
-
-    .brand-box h1{
-        font-size:36px;
-    }
-
-    .menu-header h2{
-        font-size:28px;
-    }
-
-    .section-divider{
-        margin:20px;
-    }
-
-    .order-container{
-        flex-direction:column;
-        align-items:center;
-    }
-
-    .order-card{
-        width:100%;
-        max-width:350px;
-    }
-
-    .footer-grid{
-        flex-direction:column;
-        gap:20px;
-    }
-
-    .floating-call,
-    .floating-whatsapp{
-
-        width:60px;
-        height:60px;
-    }
-}
+/* =========================
+   SEPARATORS
+========================= */
+
+hr {
+    border: none;
+    
