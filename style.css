@@ -1,6 +1,17 @@
-/* ==========================
-   GLOBAL
-========================== */
+:root{
+    --bg:#111111;
+    --card:#1A1A1A;
+
+    --gold:#F4C542;
+
+    --text:#F5F5F5;
+
+    --whatsapp:#1FA855;
+    --whatsapp-hover:#178A45;
+
+    --call:#E67E00;
+    --call-hover:#C96D00;
+}
 
 *{
     margin:0;
@@ -10,13 +21,13 @@
 
 body{
     font-family:Arial, Helvetica, sans-serif;
-    background:#111111;
-    color:#ffffff;
+    background:var(--bg);
+    color:var(--text);
     line-height:1.6;
 }
 
 /* ==========================
-   SWAAD STUDIO
+   SWAAD STUDIO HEADER
 ========================== */
 
 .site-header{
@@ -25,29 +36,29 @@ body{
 }
 
 .brand-box h1{
-    font-size:50px;
+    font-size:52px;
     color:#ffffff;
 }
 
 .brand-box p{
-    color:#d4af37;
-    margin-top:10px;
+    color:var(--gold);
     font-size:18px;
+    margin-top:10px;
 }
 
 /* ==========================
-   SECTION SEPARATOR
+   SEPARATOR LINE
 ========================== */
 
 .section-divider{
     border:none;
     height:2px;
-    background:#d4af37;
-    margin:30px 50px;
+    background:var(--gold);
+    margin:30px 40px;
 }
 
 /* ==========================
-   SECTION HEADERS
+   SECTION TITLES
 ========================== */
 
 .menu-header{
@@ -56,17 +67,17 @@ body{
 }
 
 .menu-header h2{
-    color:#ffffff;
     font-size:36px;
+    color:#ffffff;
     margin-bottom:10px;
 }
 
 .menu-header p{
-    color:#d4af37;
+    color:var(--gold);
 }
 
 /* ==========================
-   MENU AREA
+   MENUS
 ========================== */
 
 .menu-section{
@@ -84,7 +95,7 @@ body{
 }
 
 .menu-card h3{
-    color:#d4af37;
+    color:var(--gold);
     margin-bottom:15px;
     font-size:28px;
 }
@@ -92,9 +103,9 @@ body{
 .menu-image{
     width:100%;
     height:auto;
-    border-radius:15px;
     display:block;
-    box-shadow:0 0 20px rgba(0,0,0,0.40);
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(0,0,0,.45);
 }
 
 /* ==========================
@@ -113,60 +124,47 @@ body{
 }
 
 .order-card{
-
     width:320px;
-
-    background:#1a1a1a;
-
+    background:var(--card);
     border-radius:15px;
-
     padding:25px;
-
     text-align:center;
-
-    box-shadow:0 0 15px rgba(0,0,0,0.35);
+    box-shadow:0 0 15px rgba(0,0,0,.35);
 }
 
 .phone-number{
-    color:#d4af37;
+    color:var(--gold);
     font-size:24px;
     font-weight:bold;
     margin-bottom:20px;
 }
 
 .btn{
-
     display:block;
-
     width:100%;
-
     padding:15px;
-
-    border-radius:10px;
-
+    border-radius:12px;
     text-decoration:none;
-
     font-weight:bold;
-
     text-align:center;
-
     color:white;
+    transition:.3s;
 }
 
 .call-btn{
-    background:#ff9800;
+    background:var(--call);
 }
 
 .call-btn:hover{
-    background:#e68900;
+    background:var(--call-hover);
 }
 
 .whatsapp-btn{
-    background:#25D366;
+    background:var(--whatsapp);
 }
 
 .whatsapp-btn:hover{
-    background:#1fa855;
+    background:var(--whatsapp-hover);
 }
 
 /* ==========================
@@ -175,7 +173,6 @@ body{
 
 .footer{
     padding:30px 20px;
-    margin-top:20px;
 }
 
 .footer-grid{
@@ -187,47 +184,79 @@ body{
 }
 
 .footer-grid strong{
-    color:#d4af37;
+    color:var(--gold);
 }
 
 .footer-grid p{
     margin-top:8px;
 }
 
-.footer-grid a{
-    text-decoration:none;
-    color:white;
-}
-
-.footer-grid a:hover{
-    color:#25D366;
-}
-
 .footer-note{
-    text-align:center;
     margin-top:20px;
-    color:#d4af37;
+    text-align:center;
+    color:var(--gold);
 }
 
 /* ==========================
-   FLOATING WHATSAPP
+   FLOATING BUTTONS
 ========================== */
 
+.floating-call,
 .floating-whatsapp{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    width:60px;
-    height:60px;
+
+    width:64px;
+    height:64px;
+
     border-radius:50%;
-    background:#25D366;
-    color:white;
+
     display:flex;
-    align-items:center;
     justify-content:center;
+    align-items:center;
+
     text-decoration:none;
+
+    color:white;
+
     font-size:30px;
-    box-shadow:0 0 15px rgba(0,0,0,0.40);
+
+    position:fixed;
+
+    right:20px;
+
+    z-index:9999;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.35);
+
+    transition:.3s;
+}
+
+.floating-call{
+    bottom:95px;
+    background:var(--call);
+}
+
+.floating-whatsapp{
+    bottom:20px;
+    background:var(--whatsapp);
+}
+
+.floating-call:hover{
+    background:var(--call-hover);
+    transform:scale(1.08);
+}
+
+.floating-whatsapp:hover{
+    background:var(--whatsapp-hover);
+    transform:scale(1.08);
+}
+
+/* Accessibility */
+
+.floating-call:focus,
+.floating-whatsapp:focus,
+.btn:focus{
+    outline:3px solid #ffffff;
+    outline-offset:4px;
 }
 
 /* ==========================
@@ -242,6 +271,10 @@ body{
 
     .menu-header h2{
         font-size:28px;
+    }
+
+    .section-divider{
+        margin:20px;
     }
 
     .order-container{
@@ -259,7 +292,9 @@ body{
         gap:20px;
     }
 
-    .section-divider{
-        margin:20px;
+    .floating-call,
+    .floating-whatsapp{
+        width:60px;
+        height:60px;
     }
 }
