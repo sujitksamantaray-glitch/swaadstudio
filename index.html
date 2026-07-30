@@ -1,95 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Swaad Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
 
-    style.css
+<body>
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.  <div class="page-wrapper">
+    <div class="page-wrapper">
 
         <!-- HEADER -->
-        <header>
-            <h1>The Swaad Studio</h1>
-            <p>Swaad Jo Dil Ko Choo Le!</p>
+        <header class="site-header">
+            <div class="brand-box">
+                <h1>The Swaad Studio</h1>
+                <p>Swaad Jo Dil Ko Choo Le!</p>
+            </div>
         </header>
 
-        <hr>
+        <hr class="section-divider">
 
-        <!-- MENUS -->
-        <section class="menus">
-
+        <!-- OUR MENUS -->
+        <section class="menu-header">
             <h2>Our Menus</h2>
+            <p>Browse our delicious menu and place your order online.</p>
+        </section>
+
+        <section class="menu-section">
 
             <div class="menu-card">
                 <h3>Menu 1</h3>
-                <img src="Menu1.png" alt="Swaad Studio Menudiv class="menu-card">
+                <img src="images/Menu1.png" alt="Swaad Studio Menu 1" class="menu-image">
+            </div>
+
+            <div class="menu-card">
                 <h3>Menu 2</h3>
-                Menu2.png
+                <img src="images/Menu2.png" alt="Swaad Studio Menu 2" class="menu-image">
             </div>
 
         </section>
 
-        <hr>
+        <hr class="section-divider">
 
         <!-- ORDER ONLINE -->
-        <section class="order-section">
-
+        <section class="menu-header">
             <h2>Order Online</h2>
-
-            <div class="order-cards">
-
-                <!-- CALL NOW -->
-                tel:+918840820833
-                    <i class="fas fa-phone"></i>
-                    <h3>Call Now</h3>
-                    <p>+91 88408 20833</p>
-                </a>
-
-                <!-- WHATSAPP -->
-                <a href="https://wa.me/918840820833?text=Hi%20Swaad%20Studio%2C%20I%20would%20like%20to%20place%20an%20order."
-                    target="_blank"
-                    class="order-card whatsapp-card">
-                    <i classrder</p>
-                </a>
-
-            </div>
-
+            <p>Fast • Easy • Direct Ordering</p>
         </section>
 
-        <hr>
+        <section class="quick-order-section">
+            <div class="order-container">
 
-        <!-- FOOTER -->
-        <footer>
+                <!-- CLICKABLE PHONE CARD -->
+                <a class="order-card clickable-card call-card" href="tel:+918840820833" aria-label="Call Swaad Studio at +91 88408 20833">
+                    <div class="phone-number">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 88408 20833</span>
+                    </div>
+                    <div class="btn call-btn">Call Now</div>
+                </a>
 
-            <div class="footer-grid">
-
-                <div class="footer-item">
-                    <i class="fas fa-phone"></i>
-                    <p>+91 88408 20833</p>
-                </div>
-
-                <div class="footer-item">
-                    <i class="fas fa-clock"></i>
-                    <p>
-                        Open Daily<br>
-                        11:00 AM – 11:00 PM
-                    </p>
-                </div>
+                <!-- CLICKABLE WHATSAPP CARD -->
+                <a class="order-card clickable-card whatsapp-card" href="https://wa.me/918840820833?text=Hi%20Swaad%20Studio%2C%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener noreferrer" aria-label="Open WhatsApp to order from Swaad Studio">
+                    <div class="phone-number">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>+91 88408 20833</span>
+                    </div>
+                    <div class="btn whatsapp-btn">Open WhatsApp</div>
+                </a>
 
             </div>
+        </section>
 
-            <p class="copyright">
-                © 2026 The Swaad Studio
-            </p>
+        <hr class="section-divider">
 
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-grid">
+                <div class="footer-item">
+                    <strong><i class="fas fa-clock"></i> Open Daily</strong>
+                    <p>11:00 AM - 11:00 PM</p>
+                </div>
+            </div>
+
+            <p class="footer-note">We use fresh ingredients | Hygiene is our happiness</p>
         </footer>
 
     </div>
 
-</body>
+    <!-- FLOATING CALL BUTTON -->
+    <a class="floating-call" href="tel:+918840820833" aria-label="Call Swaad Studio at +91 88408 20833" title="Call Swaad Studio">
+        <i class="fas fa-phone"></i>
+    </a>
 
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a class="floating-whatsapp" href="https://wa.me/918840820833?text=Hi%20Swaad%20Studio%2C%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener noreferrer" aria-label="Open WhatsApp to order from Swaad Studio" title="Order on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
 </html>
